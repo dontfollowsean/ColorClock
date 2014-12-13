@@ -65,6 +65,7 @@ function compliment(hexColor,hsl){
 
     $("#b").css("background-color", compColor );
     $("#jumbo").css("background-color", hexColor );
+    $("#clock").css("background-color", hexColor );
     
 }
 
@@ -171,9 +172,9 @@ function hexToRgb(hexVal){
     var blueHex  = '0x'+hexVal.substr(3,2);
     var greenHex = '0x'+hexVal.substr(5);
 
-    var r = (redHex.toString(10) / 255) * 10.625;//scaled to last whole day
-    var g = (blueHex.toString(10) / 255) * 4.25;
-    var b = (greenHex.toString(10) / 255) * 4.25;
+    var r = (redHex.toString(10) / 255) ;//scaled to last whole day
+    var g = (blueHex.toString(10) / 255) ;
+    var b = (greenHex.toString(10) / 255) ;
 
 
     var rgb = [r,g,b];
